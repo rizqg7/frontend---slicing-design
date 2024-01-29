@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parfume</title>
+    <style>
+        html{
+            background-color: rgb(238, 206, 206);
+        }
+      .container {
+        width: 42em;
+        height: 30em;
+        margin: 10em auto;
+        border-radius: 1em 0 0 1em;
+        background-color: rgb(232, 232, 232);
+        border-radius: 1em 1em 1em 1em;
+      }
+      .card-left {
+        width: 21em;
+        height: 30em;
+        display: inline;
+      }
+      img {
+        width: 21em;
+        height: 30em;
+        border-radius: 1em 0 0 1em;
+      }
+      .card-right {
+        float: right;
+        margin-right: 2.5em;
+      }
+      .card-right > p {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        margin-top: 30px;
+        color: rgb(100, 100, 100);
+      }
+      h1 {
+        font-size: 35px;
+      }
+      .card-right > h2 {
+        color: rgb(0, 173, 98);
+        font-size: 2.5rem;
+        display: inline;
+      }
+      del {
+        margin-left: 1rem;
+        
+        
+      }
+      .card-right > button {
+        display: block;
+        margin-top: 1rem;
+      }
+      button {
+        margin: 10em auto;
+        border-radius: 0.8em;
+        background-color: rgb(0, 173, 98);
+        color: white;
+        width: 19em;
+        height: 4em;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, Helvetica,sans-serif;
+
+      }
+      b {
+        font-size: 1.4em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- card left -->
+      <div class="card-left">
+        <img src="1.png" alt="" />
+      </div>
+      <!-- card right -->
+      <div class="card-right">
+        <p style="font-size: 10px;"><b>P E R F U M E</b></p>
+        <b>
+          <h1>
+            Gabrielle <br />
+            Essence Eau <br />
+            De Parfum
+          </h1>
+        </b>
+        <p>
+          A floral, solar and voluptuous <br />
+          interpretation composed by <br />
+          Olivier Polge, Perfumer-Creator <br />
+          for the House of CHANEL
+        </p>
+        <h2>$149.99</h2>
+        <del>$169.99</del>
+        <button type="submit">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-shopping-cart"
+            width="28"
+            height="22"
+            viewBox="3 0 24 24"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+            <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+            <path d="M17 17h-11v-14h-2" />
+            <path d="M6 5l14 1l-1 7h-13" />
+          </svg>
+          <b>Add to Cart</b>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

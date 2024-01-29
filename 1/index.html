@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .card1-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 10em auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+      .card1 {
+        width: 16em;
+        height: 20em;
+        text-align: center;
+        border-radius: 7%;
+        background-image: linear-gradient(
+          to top,
+          rgb(10, 10, 241) 10%,
+          rgb(72, 72, 255) 70%
+        );
+      }
+      .result {
+        color: rgb(182, 182, 182);
+        font-size: 1em;
+      }
+      h1 {
+        font-size: 3em;
+      }
+      .round {
+        width: 8em;
+        height: 8em;
+        background-image: linear-gradient(
+          to bottom,
+          rgb(10, 10, 241) 10%,
+          rgb(72, 72, 255) 70%
+        );
+        color: white;
+        border-radius: 8em;
+        margin: auto;
+        display: flex;
+        text-align: center;
+        place-items: center;
+        justify-content: center;
+        padding-bottom: 1em;
+        box-sizing: border-box;
+      }
+      .bottom {
+        position: absolute;
+        margin-top: 6em;
+        font-size: 0.8em;
+      }
+      .great {
+        font-size: 2em;
+        margin: 12px;
+        color: white;
+      }
+      .value {
+        font-size: 0.8em;
+        color: rgb(172, 172, 172);
+      }
+
+      .card2{
+        width: 16em;
+        height: 22em;
+        text-align: center;
+      }
+      h4{
+        color: rgb(47, 47, 47);
+        margin-right: 9.5em;
+
+      }
+      .reaction, .memory, .verbal, .visual{
+        width: 14em;
+        height: 2.5em;
+        border-radius: .5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
+      .reaction, .memory{
+        background-color: rgb(251, 212, 212);
+      }
+      .in-reaction{
+        color:rgb(218, 55, 46);
+        margin-right: 3.7em;
+      }
+      .in-memory{
+        color: rgb(255, 198, 28);
+        margin-right: 3.5em;
+      }
+      .verbal, .visual{
+        background-color: rgb(215, 237, 255);
+      }
+      .in-verbal{
+        color: rgb(55, 195, 181);
+        margin-right: 5em;
+      }
+      .in-visual{
+        color: rgb(14, 14, 170); 
+        margin-right: 5em;
+      }
+      button{
+        background-color: rgb(38, 38, 57);
+        border-radius: 1.3em;
+        color: white;
+        width: 18em;
+        height: 3em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card1-2">
+      <div class="card1">
+        <h5 class="result">Your Result</h5>
+        <div class="round">
+          <h1><b>76</b></h1>
+          <p class="bottom">of 100</p>
+        </div>
+        <h2 class="great"><b>Great</b></h2>
+        <p class="value">
+          Your scored higher than 65% of <br />
+          the people who have taken <br />
+          these test
+        </p>
+      </div>
+
+      <div class="card2">
+        <h4><b>Summary</b></h4>
+        <div class="reaction">
+            <span class="in-reaction">⚡Reaction </span>
+            <span class="number"><b>80 </b>/ 100</span>
+        </div><br>
+        <div class="memory" >
+            <span class="in-memory">🧠 Memory</span>
+            <span class="number"><b>92 </b>/ 100</span>
+        </div><br>
+        <div class="verbal">
+            <span class="in-verbal">🗣 Verbal</span>
+            <span class="number"><b>61 </b>/ 100</span>
+        </div><br>
+        <div class="visual">
+            <span class="in-visual">👁 Visual</span>
+            <span class="number"><b>72 </b>/ 100</span>
+        </div><br>
+        <button type="submit">Continue</button>
+      </div>
+    </div>
+  </body>
+</html>
