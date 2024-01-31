@@ -36,7 +36,7 @@
       }
 
       /* css breakpoints */
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 401px) {
         .container {
           border-radius: 0.7em;
           width: 40em;
@@ -67,7 +67,7 @@
         font-style: normal;
       }
       article > h2,
-      .fill-nutrition > p > span {
+      .fill-nutrition{
         color: hsl(14, 45%, 36%);
       }
       .container {
@@ -95,10 +95,14 @@
         color: hsl(14, 45%, 36%);
       }
       .fill-nutrition {
-        word-spacing: 2em;
-        padding-left: 20px;
+        margin-left: 2em;
+        display: flex;
+        justify-content: center;
+        margin-top: -1.2em;
       }
-
+      article > div > span {
+        margin: 1em 2em;
+      }
       p {
         font-size: 16px;
       }
@@ -106,6 +110,17 @@
         background-color: hsl(30, 18%, 87%);
         border: none;
         height: 1px;
+      }
+      footer{
+        background-color: rgb(255, 136, 0);
+        text-align: center;
+      }
+      footer > a {
+        text-decoration: none;
+
+      }
+      footer > a:hover {
+        background-color: rgb(156, 84, 2);
       }
     </style>
   </head>
@@ -182,14 +197,14 @@
           The table below shows nutritional values per serving without the
           additional fillings.
         </p>
-        <div class="fill-nutrition">
-          <p>Calories <span>277kcal</span></p>
+        <div >
+          <span>Calories </span> <span class="fill-nutrition">277kcal</span>
           <hr />
-          <p>Carbs <span>0g</span></p>
+          <span>Carbs </span> <span class="fill-nutrition">0g</span>
           <hr />
-          <p>Protein <span>20g</span></p>
+          <span>Protein </span> <span class="fill-nutrition">20g</span>
           <hr />
-          <p>Fat <span>22g</span></p>
+          <span>Fat </span> <span class="fill-nutrition">22g</span>
           <hr />
         </div>
       </article>
@@ -197,8 +212,8 @@
       <footer>
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Rizqi Abdilah</a>.
+          ><b>Frontend Mentor</b></a
+        >. Coded by <a href="https://www.instagram.com/rizq.g7/"><b>Rizqi Abdilah</b></a>.
       </footer>
     </div>
   </body>
